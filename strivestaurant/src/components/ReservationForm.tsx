@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import IReservations from '../interfaces/reservation'
+import {FormEvent} from 'react'
 
 const ReservationForm = () => {
   const [reservation, setReservation] = useState<IReservations>({
@@ -11,9 +12,10 @@ const ReservationForm = () => {
     smoking: false,
     dateTime: '',
     specialRequests: '',
+
   })
 
-  const handleInput = (fieldName:string, value:string|number) => {
+  const handleInput = (fieldName:string, value:string|number|boolean) => {
     setReservation({
       ...reservation,
       [fieldName]: value,
@@ -44,6 +46,7 @@ const ReservationForm = () => {
           smoking: false,
           dateTime: '',
           specialRequests: '',
+      
         })
       } else {
         alert('ERROR')

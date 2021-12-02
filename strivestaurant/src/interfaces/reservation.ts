@@ -5,6 +5,7 @@ interface IReservations {
     smoking: boolean;
     dateTime: string;
     specialRequests: string;
+    _id?: number;
 }
 
 
