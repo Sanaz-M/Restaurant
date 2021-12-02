@@ -8,7 +8,6 @@ import Menu from './components/Menu'
 import Booking from './components/Booking'
 import Details from './components/Details'
 
-
 function App() {
   return (
     <div>

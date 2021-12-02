@@ -2,7 +2,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import IPasta from '../interfaces/pasta'
 
 interface pastaComment {
-  selectedDish: IPasta
+  selectedDish: IPasta | null
 }
 const DishComments = ({ selectedDish }: pastaComment) => (
   <ListGroup>
